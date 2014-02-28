@@ -28,8 +28,14 @@
     "test": "grunt test"
   },
   "dependencies": {
+  	"async": "~0.2.9",
     "svg-sprite": "~0.1.0",
-    "chalk": "0.3.x"
+    "chalk": "~0.3.x",
+    "svg2png": ">= 1.0.1",
+    "underscore": "",
+    "pngcrush-bin": ">=0.1.7",
+    "pngquant-bin": ">=0.1.6",
+    "optipng-bin": ">=0.3.1"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
