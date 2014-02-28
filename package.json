@@ -1,0 +1,46 @@
+{
+  "name": "grunt-iconizr",
+  "description": "Grunt plugin that takes a folder of SVG icons and creates a CSS icon kit out of them, including SVG & PNG sprites, suitable CSS / Sass / LESS etc. resources and a JavaScript loader for easy integration into your HTML documents",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jkphl/grunt-iconizr",
+  "author": {
+    "name": "Joschi Kuphal",
+    "email": "joschi@kuphal.net",
+    "url": "http://jkphl.is"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkphl/grunt-iconizr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkphl/grunt-iconizr/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jkphl/grunt-iconizr/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "svg-sprite": "~0.1.0",
+    "chalk": "0.3.x"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
