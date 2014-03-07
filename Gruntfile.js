@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       ],
       options: {
         jshintrc: '.jshintrc'
-      },
+      }
     },
 
     // Before generating any new files, remove any previously-created files.
@@ -31,19 +31,23 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     iconizr: {
       default_options: {
+        src : ['test/fixtures'],
+        dest : ['tmp/default/css'],
         options: {
-        },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
+          verbose: 1
         }
       },
       custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+        src : 'test/fixtures',
+        dest : ['tmp/custom/css'],
+        options : {
+          preview : 'preview',
+          keep : true,
+          render : {
+            scss : '../sass/_icons',
+            less : '../less/_icons'
+          },
+          verbose: 1
         }
       }
     },

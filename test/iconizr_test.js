@@ -1,6 +1,8 @@
 'use strict';
 
-var grunt = require('grunt');
+var grunt		= require('grunt'),
+path			= require('path'),
+file			= require('file');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -22,6 +24,22 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
+/**
+ * Recursively find all files in a particular directory
+ * 
+ * @param {String} dir		Directory
+ * @return {Array}			Files
+ */
+function find(dir) {
+	var genfiles			= [];
+    file.walkSync(dir, function(dirPath, dirs, files) {
+      files.forEach(function(file){
+        genfiles.push(path.join(dirPath, file));
+      });
+    });
+    return genfiles;
+}
+
 exports.iconizr = {
   setUp: function(done) {
     // setup here if necessary
@@ -29,20 +47,12 @@ exports.iconizr = {
   },
   default_options: function(test) {
     test.expect(1);
-
-    var actual = grunt.file.read('tmp/default_options');
-    var expected = grunt.file.read('test/expected/default_options');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
-
+    test.equal(find(path.resolve(__dirname, '../tmp/default')).length, 7, 'should result in 7 generated files.');
     test.done();
   },
   custom_options: function(test) {
     test.expect(1);
-
-    var actual = grunt.file.read('tmp/custom_options');
-    var expected = grunt.file.read('test/expected/custom_options');
-    test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
-
+    test.equal(find(path.resolve(__dirname, '../tmp/custom')).length, 51, 'should result in 51 generated files.');
     test.done();
-  },
+  }
 };
