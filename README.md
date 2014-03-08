@@ -24,6 +24,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-iconizr');
 ```
 
+
 The "iconizr" task
 ------------------
 
@@ -127,13 +128,13 @@ grunt.initConfig({
   iconizr: {
     simple: {
       src: ['path/to/svg/dir'],
-      dest: 'path/to/css/dir'
+      dest: 'path/to/css'
     }
   }
 })
 ```
 
-These files are created:
+These files are created at `path/to`:
 
 ```bash
 `-- css
@@ -155,7 +156,7 @@ grunt.initConfig({
   svgsprite       : {
     spriteSass    : {
       src         : ['path/to/svg/dir'],
-      dest        : 'path/to/css/dir',
+      dest        : 'path/to/css',
       options     : {
         preview   : 'preview',
         dims      : dims,
@@ -172,7 +173,7 @@ grunt.initConfig({
 })
 ```
 
-These files are created (when run with the example SVG images coming with *iconizr*):
+These files are created at `path/to` (when run with the example SVG images coming with *iconizr*):
 
 ```bash
 |-- css
@@ -228,18 +229,20 @@ These files are created (when run with the example SVG images coming with *iconi
 
 > Please note that — although the `keep` option has been specified — the `*-single.{scss|less}` stylesheets (respectively their CSS products) will never be used by the loader fragment. Compared to sprites or data URIs, serving single images to your clients must be considered the worst solution of all (HTTP request overhead). The `*-single*` file flavours are only contained for the sake of completeness.  
 
+
 Contributing
 ------------
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
+
 Other versions
 --------------
-Besides this Grunt plugin, there are several different versions of *iconizr*:
+Besides this Grunt plugin there are several different versions of *iconizr*:
 
 *	The [Node.js module](https://github.com/jkphl/node-iconizr) underlying this Grunt plugin.
-*	The [PHP command line](https://github.com/jkphl/iconizr) version (that in fact has been the "original" one, but compared to the Node.js / Grunt branch it's a little outdated at the moment ...).
+*	A [PHP command line](https://github.com/jkphl/iconizr) version (that in fact is the "original" one, but compared to the Node.js / Grunt branch it's a little outdated at the moment ...).
 *	The **online service** at [iconizr.com](http://iconizr.com) that's based on the aforementioned PHP version (you can use it for creating CSS icon kits without the need of a local installation).
-*	Finally, [Haithem Bel Haj](https://github.com/haithembelhaj) has published a [Grunt plugin](https://github.com/haithembelhaj/grunt-iconizr-php) that's also based on the PHP version. I never tried this one myself, though.
+*	Finally, [Haithem Bel Haj](https://github.com/haithembelhaj) published a [Grunt plugin](https://github.com/haithembelhaj/grunt-iconizr-php) that's also based on the PHP version. I never tried this one myself, though.
 
 
 Release History
@@ -247,6 +250,7 @@ Release History
 
 #### v0.1.0
 *	Initial release
+
 
 Legal
 -----
