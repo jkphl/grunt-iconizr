@@ -1,13 +1,13 @@
 {
   "name": "grunt-iconizr",
-  "description": "Grunt plugin that takes a folder of SVG images and creates a CSS icon kit out of them, serving the icons as SVG / PNG sprite or embedded data URI (depending on the client's capabilities), along with suitable CSS / Sass / LESS etc. resources and a JavaScript loader for easy integration into your HTML documents",
   "version": "0.1.0",
-  "homepage": "https://github.com/jkphl/grunt-iconizr",
   "author": {
     "name": "Joschi Kuphal",
     "email": "joschi@kuphal.net",
     "url": "http://jkphl.is"
   },
+  "description": "Takes a folder of SVG images and creates a CSS icon kit out of them, serving the icons as SVG / PNG sprite or embedded data URI (depending on the client's capabilities), along with suitable CSS / Sass / LESS etc. resources and a JavaScript loader for easy integration into your HTML documents",
+  "homepage": "https://github.com/jkphl/grunt-iconizr",
   "repository": {
     "type": "git",
     "url": "https://github.com/jkphl/grunt-iconizr.git"
@@ -21,6 +21,7 @@
       "url": "https://github.com/jkphl/grunt-iconizr/blob/master/LICENSE.txt"
     }
   ],
+  "main": "Gruntfile.js",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -48,11 +49,13 @@
     "svg",
     "png",
     "sprite",
+    "generator",
     "css",
     "sass",
     "less",
     "vector",
     "rwd",
-    "retina"
+    "retina",
+    "mustache"
   ]
 }
