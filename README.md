@@ -1,6 +1,6 @@
 # grunt-iconizr
 
-![iconizr](http://iconizr.com/iconizr.png)
+<img src="http://iconizr.com/iconizr.png" alt="iconizr" align="right"/>
 
 > Takes a folder of SVG images and creates a CSS icon kit out of them, serving the icons as SVG / PNG sprite or embedded data URI (depending on the client's capabilities), along with suitable CSS / Sass / LESS etc. resources and a JavaScript loader for easy integration into your HTML documents. It wraps around the [iconizr](https://github.com/jkphl/node-iconizr) Node.js module which is built on top of [svg-sprite](https://github.com/jkphl/svg-sprite).
 
