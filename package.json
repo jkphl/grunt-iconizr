@@ -1,6 +1,6 @@
 {
   "name": "grunt-iconizr",
-  "description": "Grunt plugin that takes a folder of SVG icons and creates a CSS icon kit out of them, including SVG & PNG sprites, suitable CSS / Sass / LESS etc. resources and a JavaScript loader for easy integration into your HTML documents",
+  "description": "Grunt plugin that takes a folder of SVG images and creates a CSS icon kit out of them, serving the icons as SVG / PNG sprite or embedded data URI (depending on the client's capabilities), along with suitable CSS / Sass / LESS etc. resources and a JavaScript loader for easy integration into your HTML documents",
   "version": "0.1.0",
   "homepage": "https://github.com/jkphl/grunt-iconizr",
   "author": {
@@ -18,7 +18,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jkphl/grunt-iconizr/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jkphl/grunt-iconizr/blob/master/LICENSE.txt"
     }
   ],
   "engines": {
