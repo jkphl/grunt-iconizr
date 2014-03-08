@@ -1,7 +1,7 @@
 grunt-iconizr
 =============
 <img src="http://iconizr.com/iconizr.png" alt="iconizr" align="right"/>
-> Grunt plugin
+> Grunt plugin version
 
 Takes a folder of SVG images and creates a CSS icon kit out of them. Depending on the client's capabilities, icons are served as SVG / PNG sprite or embedded data URIs. *iconizr* creates suitable CSS / Sass / LESS etc. resources and a JavaScript loader for easy integration into your HTML documents.
 
@@ -231,6 +231,16 @@ These files are created (when run with the example SVG images coming with *iconi
 Contributing
 ------------
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+Other versions
+--------------
+Besides this Grunt plugin, there are several different versions of *iconizr*:
+
+*	The [Node.js module](https://github.com/jkphl/node-iconizr) underlying this Grunt plugin.
+*	The [PHP command line](https://github.com/jkphl/iconizr) version (that in fact has been the "original" one, but compared to the Node.js / Grunt branch it's a little outdated at the moment ...).
+*	The **online service** at [iconizr.com](http://iconizr.com) that's based on the aforementioned PHP version (you can use it for creating CSS icon kits without the need of a local installation).
+*	Finally, [Haithem Bel Haj](https://github.com/haithembelhaj) has published a [Grunt plugin](https://github.com/haithembelhaj/grunt-iconizr-php) that's also based on the PHP version. I never tried this one myself, though.
+
 
 Release History
 ---------------
