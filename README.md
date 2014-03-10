@@ -248,6 +248,9 @@ Besides this Grunt plugin there are several different versions of *iconizr*:
 Release History
 ---------------
 
+#### v0.1.1
+*	npm troubleshooting release
+
 #### v0.1.0
 *	Initial release
 
