@@ -159,10 +159,10 @@ grunt.initConfig({
       dest        : 'path/to/css',
       options     : {
         preview   : 'preview',
-        dims      : dims,
+        dims      : true,
         keep      : true,
         render    : {
-          css     : false
+          css     : false,
           scss    : '../sass/_icons',
           less    : '../less/_icons'
         },
