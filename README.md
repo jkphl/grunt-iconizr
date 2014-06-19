@@ -98,6 +98,7 @@ Each option will either be used by [svg-sprite](https://github.com/jkphl/svg-spr
 |Option       |Description  |Reference    |
 |:------------|:------------|:-----------:|
 |render       |Rendering configuration (output formats like CSS, Sass, LESS, HTML with inline SVG, etc.)|[svg-sprite](https://github.com/jkphl/svg-sprite#rendering-configuration)|
+|variables    |Custom Mustache rendering variables [`{}`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
 |spritedir    |Sprite subdirectory name [`"svg"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
 |sprite       |Sprite file name [`"sprite"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
 |prefix       |CSS selector prefix [`"svg"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
@@ -255,6 +256,11 @@ Besides this Grunt plugin there are several different versions of *iconizr*:
 
 Release History
 ---------------
+
+#### v0.2.2
+*	[Compatibility release](https://github.com/jkphl/node-iconizr#v022)
+*	Added a Stylus output template ([*node-iconizr* #5](https://github.com/jkphl/node-iconizr/pull/5))
+*	Added the `variables` config option ([#13](https://github.com/jkphl/grunt-iconizr/issues/13))
 
 #### v0.2.0
 *	[Compatibility release](https://github.com/jkphl/node-iconizr#v020)
