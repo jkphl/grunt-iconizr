@@ -1,6 +1,6 @@
 {
   "name": "grunt-iconizr",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": {
     "name": "Joschi Kuphal",
     "email": "joschi@kuphal.net",
@@ -29,8 +29,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-  	"iconizr": "~0.2.2",
-    "chalk": "~0.3.x"
+  	"iconizr": "~0.2.3",
+    "chalk": "~0.5.1"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",

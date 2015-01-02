@@ -257,6 +257,10 @@ Besides this Grunt plugin there are several different versions of *iconizr*:
 Release History
 ---------------
 
+#### v0.2.3
+*	[Compatibility release](https://github.com/jkphl/node-iconizr#v023)
+*	Updated dependencies ([#14](https://github.com/jkphl/grunt-iconizr/issues/14))
+
 #### v0.2.2
 *	[Compatibility release](https://github.com/jkphl/node-iconizr#v022)
 *	Added a Stylus output template ([*node-iconizr* #5](https://github.com/jkphl/node-iconizr/pull/5))
