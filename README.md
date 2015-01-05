@@ -1,3 +1,7 @@
+ATTENTION: Not yet based on the latest [svg-sprite](https://github.com/jkphl/svg-sprite) generation!
+====================================================================================================
+This version of *grunt-iconizr* is still **based on an outdated version of _svg-sprite_**. Links to the *svg-sprite* manual have been adapted. An updated version of *grunt-iconizr* will be available soon, supporting all the [shiny new features](https://github.com/jkphl/svg-sprite). Thanks for your patience! <3
+
 grunt-iconizr
 =============
 <img src="http://iconizr.com/iconizr.png" alt="iconizr" align="right"/>
@@ -5,7 +9,7 @@ grunt-iconizr
 
 Takes a folder of SVG images and creates a CSS icon kit out of them. Depending on the client's capabilities, icons are served as SVG / PNG sprite or embedded data URIs. *iconizr* creates suitable CSS / Sass / LESS etc. resources and a JavaScript loader for easy integration into your HTML documents.
 
-The *iconizr* Grunt plugin wraps around the [iconizr](https://github.com/jkphl/node-iconizr) and [svg-sprite](https://github.com/jkphl/svg-sprite) Node.js modules.
+The *iconizr* Grunt plugin wraps around the [iconizr](https://github.com/jkphl/node-iconizr) and [svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10) Node.js modules.
 
 
 Getting Started
@@ -53,7 +57,7 @@ your_target: {
 }
 ```
 
-As [iconizr](https://github.com/jkphl/node-iconizr) / [svg-sprite](https://github.com/jkphl/svg-sprite) accepts exactly **one input directory** for each run, only the first element of the `src` resource list will be used. That said, you may also provide a simple string as `src` argument: 
+As [iconizr](https://github.com/jkphl/node-iconizr) / [svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10) accepts exactly **one input directory** for each run, only the first element of the `src` resource list will be used. That said, you may also provide a simple string as `src` argument: 
 
 ```javascript
 your_target: {
@@ -66,7 +70,7 @@ your_target: {
 
 Each time you create a CSS icon kit, these are the processing stages:
 
-1.	[svg-sprite](https://github.com/jkphl/svg-sprite) will find all SVG files inside the input directory and **create an SVG sprite** out of them.
+1.	[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10) will find all SVG files inside the input directory and **create an SVG sprite** out of them.
 	*	The SVG images may be **automatically optimized** prior to being merged into the sprite, thus potentially saving some bytes.
 	*	When used from within *iconizr*, no output files (except the SVG sprite itself) will be produced at this stage.
 2.	[iconizr](https://github.com/jkphl/node-iconizr) creates **PNG fallbacks** and accompanying **stylesheet resources** around the SVG files.
@@ -93,27 +97,27 @@ your_target: {
 }
 ```
 
-Each option will either be used by [svg-sprite](https://github.com/jkphl/svg-sprite) or [iconizr](https://github.com/jkphl/node-iconizr) (or both) for configuring their processing workflows. Please see the corresponding references for details. 
+Each option will either be used by [svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10) or [iconizr](https://github.com/jkphl/node-iconizr) (or both) for configuring their processing workflows. Please see the corresponding references for details. 
 
 |Option       |Description  |Reference    |
 |:------------|:------------|:-----------:|
-|render       |Rendering configuration (output formats like CSS, Sass, LESS, HTML with inline SVG, etc.)|[svg-sprite](https://github.com/jkphl/svg-sprite#rendering-configuration)|
-|variables    |Custom Mustache rendering variables [`{}`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|spritedir    |Sprite subdirectory name [`"svg"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|sprite       |Sprite file name [`"sprite"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|prefix       |CSS selector prefix [`"svg"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|common       |Common CSS selector for all images [*empty*]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|maxwidth     |Maximum single image width [`1000`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|maxheight    |Maximum single image height [`1000`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|padding      |Transparent padding around the single images (in pixel) [`0`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|layout       |Image arrangement within the sprite (`"vertical"`, `"horizontal"` or `"diagonal"`) [`"vertical"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|pseudo       |Character sequence for denoting CSS pseudo classes [`"~"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|dims         |Render image dimensions as separate CSS rules [`false`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|keep         |Keep intermediate SVG files (inside the sprite subdirectory) [`false`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|recursive    |Recursive scan of the input directory for SVG files [`false`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|verbose      | Output verbose progress information (0-3) [`0`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|cleanwith    |Module to be used for SVG cleaning. Currently "scour" or "svgo" [`"svgo"`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
-|cleanconfig  |Configuration options for the cleaning module [`{}`]|[svg-sprite](https://github.com/jkphl/svg-sprite#available-options)|
+|render       |Rendering configuration (output formats like CSS, Sass, LESS, HTML with inline SVG, etc.)|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#rendering-configuration)|
+|variables    |Custom Mustache rendering variables [`{}`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|spritedir    |Sprite subdirectory name [`"svg"`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|sprite       |Sprite file name [`"sprite"`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|prefix       |CSS selector prefix [`"svg"`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|common       |Common CSS selector for all images [*empty*]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|maxwidth     |Maximum single image width [`1000`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|maxheight    |Maximum single image height [`1000`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|padding      |Transparent padding around the single images (in pixel) [`0`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|layout       |Image arrangement within the sprite (`"vertical"`, `"horizontal"` or `"diagonal"`) [`"vertical"`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|pseudo       |Character sequence for denoting CSS pseudo classes [`"~"`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|dims         |Render image dimensions as separate CSS rules [`false`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|keep         |Keep intermediate SVG files (inside the sprite subdirectory) [`false`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|recursive    |Recursive scan of the input directory for SVG files [`false`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|verbose      | Output verbose progress information (0-3) [`0`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|cleanwith    |Module to be used for SVG cleaning. Currently "scour" or "svgo" [`"svgo"`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
+|cleanconfig  |Configuration options for the cleaning module [`{}`]|[svg-sprite](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#available-options)|
 |quantize     |Whether to quantize the PNG images (convert to 8-bit) [`false`]|[node-iconizr](https://github.com/jkphl/node-iconizr#available-options)|
 |level        |PNG image optimization level (0-11) [`3`]|[node-iconizr](https://github.com/jkphl/node-iconizr#available-options)|
 |embed        |Embed path for the HTML loader fragment [*empty*]|[node-iconizr](https://github.com/jkphl/node-iconizr#available-options)|
@@ -234,9 +238,9 @@ These files are created at `path/to` (when run with the example SVG images comin
 
 #### Custom output formats & inline SVG embedding
 
-The output rendering of *grunt-iconizr* is based on [Mustache](http://mustache.github.io) templates, which enables **full customization of the generated results**. You can even introduce completely new output formats. For details please see the [svg-sprite documentation](https://github.com/jkphl/svg-sprite#custom-output-formats).
+The output rendering of *grunt-iconizr* is based on [Mustache](http://mustache.github.io) templates, which enables **full customization of the generated results**. You can even introduce completely new output formats. For details please see the [svg-sprite documentation](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#custom-output-formats).
 
-Also, you may use *grunt-iconizr* to create an **inline SVG sprite** that can be embedded directly into your HTML documents. Please see the [svg-sprite documentation](https://github.com/jkphl/svg-sprite#inline-embedding) for details.
+Also, you may use *grunt-iconizr* to create an **inline SVG sprite** that can be embedded directly into your HTML documents. Please see the [svg-sprite documentation](https://github.com/jkphl/svg-sprite/tree/bbd051e940e7b6373ed56277251a8affb03b1c10#inline-embedding) for details.
 
 
 Contributing
