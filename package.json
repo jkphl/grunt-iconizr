@@ -1,65 +1,69 @@
 {
-  "name": "grunt-iconizr",
-  "version": "0.2.3",
-  "author": {
-    "name": "Joschi Kuphal",
-    "email": "joschi@kuphal.net",
-    "url": "http://jkphl.is"
-  },
-  "description": "Takes a folder of SVG images and creates a CSS icon kit out of them, serving the icons as SVG / PNG sprite or embedded data URIs (depending on the client's capabilities), along with suitable CSS / Sass / LESS / Stylus etc. resources and a JavaScript loader for easy integration into your HTML documents",
-  "homepage": "https://github.com/jkphl/grunt-iconizr",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jkphl/grunt-iconizr.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jkphl/grunt-iconizr/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jkphl/grunt-iconizr/blob/master/LICENSE.txt"
-    }
-  ],
-  "main": "Gruntfile.js",
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "dependencies": {
-  	"iconizr": "~0.2.3",
-    "chalk": "~0.5.1"
-  },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt": "~0.4.2",
-    "file": ">=0.2.2"
-  },
-  "peerDependencies": {
-    "grunt": "~0.4.2"
-  },
-  "keywords": [
-    "gruntplugin",
-    "icon",
-    "icons",
-    "svg",
-    "png",
-    "sprite",
-    "generator",
-    "css",
-    "sass",
-    "less",
-    "stylus",
-    "stylesheet",
-    "inline",
-    "html",
-    "vector",
-    "rwd",
-    "retina",
-    "mustache"
-  ]
+	"name": "grunt-iconizr",
+	"description": "Grunt plugin that takes a folder of SVG images and creates a CSS icon kit out of them, serving the icons as SVG / PNG sprite or embedded data URIs along with suitable CSS / Sass / LESS / Stylus etc. resources",
+	"version": "1.0.0",
+	"homepage": "https://github.com/jkphl/grunt-iconizr",
+	"author": {
+		"name": "Joschi Kuphal",
+		"email": "joschi@kuphal.net",
+		"url": "https://jkphl.is"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jkphl/grunt-iconizr.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jkphl/grunt-iconizr/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/jkphl/grunt-iconizr/blob/master/LICENSE.txt"
+		}
+	],
+	"main": "Gruntfile.js",
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"scripts": {
+		"test": "grunt test"
+	},
+	"dependencies": {
+		"iconizr": "^1.0.0",
+		"prettysize": "^0.0.3",
+		"chalk": "^0.5.1"
+	},
+	"devDependencies": {
+		"grunt-contrib-jshint": "^0.9.2",
+		"grunt-contrib-clean": "^0.5.0",
+		"grunt-contrib-nodeunit": "^0.3.3",
+		"grunt": "~0.4.5",
+		"svg2png": "^1.1.0",
+		"image-diff": "^1.0.1"
+	},
+	"peerDependencies": {
+		"grunt": "~0.4.5"
+	},
+	"keywords": [
+		"gruntplugin",
+		"icon",
+		"icons",
+		"svg",
+		"png",
+		"sprite",
+		"spritesheet",
+		"stack",
+		"generator",
+		"css",
+		"sass",
+		"less",
+		"stylus",
+		"stylesheet",
+		"inline",
+		"html",
+		"vector",
+		"rwd",
+		"retina",
+		"mustache"
+	]
 }
